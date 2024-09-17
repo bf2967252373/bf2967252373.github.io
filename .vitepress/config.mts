@@ -41,10 +41,10 @@ export default defineConfigWithTheme<ThemeConfig>({
     ],
   ],
   ignoreDeadLinks: true,
-    // 生成站点地图
-  sitemap: {
-    hostname: 'http://xn--ykq07jmvm4vtba978f345d.top/', 
-  },
+  // 生成站点地图
+  // sitemap: {
+  //   hostname: 'https://vitepress-theme-bluearchive.vercel.app',
+  // },
   title: "Sensei's 部落格",
   description: "Sensei's 部落格",
   themeConfig: {
