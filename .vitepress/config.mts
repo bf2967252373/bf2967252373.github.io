@@ -1,26 +1,6 @@
 import { defineConfigWithTheme } from 'vitepress'
 import mdItCustomAttrs from 'markdown-it-custom-attrs'
 export interface ThemeConfig {
-  //navBar
-  menuList: { name: string; url: string }[]
-
-  //banner
-  videoBanner: boolean
-  name: string
-  welcomeText: string
-  motto: string[]
-  social: { icon: string; url: string }[]
-
-  //footer
-  footerName: string
-  poweredList: { name: string; url: string }[]
-
-  //gitalk
-  clientID: string
-  clientSecret: string
-  repo: string
-  owner: string
-  admin: string[]
 }
 
 export default defineConfigWithTheme<ThemeConfig>({
@@ -61,10 +41,10 @@ export default defineConfigWithTheme<ThemeConfig>({
     ],
   ],
   ignoreDeadLinks: true,
-   // 生成站点地图
+    // 生成站点地图
   sitemap: {
     hostname: 'http://xn--ykq07jmvm4vtba978f345d.top/', 
-  }
+  },
   title: "Sensei's 部落格",
   description: "Sensei's 部落格",
   themeConfig: {
