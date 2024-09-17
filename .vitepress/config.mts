@@ -43,7 +43,7 @@ export default defineConfigWithTheme<ThemeConfig>({
   ignoreDeadLinks: true,
   // 生成站点地图
   sitemap: {
-    hostname: 'https://xn--ykq07jmvm4vtba978f345d.top/', //替换为你自己的域名
+    hostname: 'http://xn--ykq07jmvm4vtba978f345d.top/', //替换为你自己的域名
   },
   title: "Sensei's 部落格",
   description: "Sensei's 部落格",
@@ -57,10 +57,10 @@ export default defineConfigWithTheme<ThemeConfig>({
     //banner区配置
     videoBanner: false,
     name: "Sensei's 部落格",
-    welcomeText: 'Hello, VitePress',
+    welcomeText: 'Hello, SENSEI',
     motto: ['和你的日常，就是奇迹', '何気ない日常で、ほんの少しの奇跡を見つける物語。'],
     social: [
-      { icon: 'github', url: 'https://github.com/' },
+      { icon: 'github', url: 'https://github.com/bf2967252373/' },
       { icon: 'bilibili', url: 'https://www.bilibili.com/' },
       { icon: 'qq', url: 'https://im.qq.com/index/' },
       { icon: 'wechat', url: 'https://weixin.qq.com/' },
