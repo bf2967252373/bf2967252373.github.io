@@ -42,9 +42,9 @@ export default defineConfigWithTheme<ThemeConfig>({
   ],
   ignoreDeadLinks: true,
   // 生成站点地图
-  // sitemap: {
-  //   hostname: 'https://vitepress-theme-bluearchive.vercel.app',
-  // },
+  sitemap: {
+    hostname: 'https://xn--ykq07jmvm4vtba978f345d.top/', //替换为你自己的域名
+  },
   title: "Sensei's 部落格",
   description: "Sensei's 部落格",
   themeConfig: {
