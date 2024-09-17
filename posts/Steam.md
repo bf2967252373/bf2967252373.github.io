@@ -1,7 +1,7 @@
 ---
 title: Steam个人主页美化
 date: 2024/9/17
-tags: [Steam]
+tags: [Steam，steam]
 head:
   - - meta
     - name: description
