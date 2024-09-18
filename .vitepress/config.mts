@@ -1,93 +1,89 @@
 import { defineConfigWithTheme } from 'vitepress'
 import mdItCustomAttrs from 'markdown-it-custom-attrs'
-export interface ThemeConfig {
-}
 
-export default defineConfigWithTheme<ThemeConfig>({
+export default defineConfigWithTheme({
   lang: 'zh-CN',
   head: [
     ['link', { rel: 'shortcut icon', href: '/favicon.ico' }],
-    // gitalk
     ['link', { rel: 'stylesheet', href: 'https://unpkg.com/gitalk/dist/gitalk.css' }],
     ['script', { src: 'https://unpkg.com/gitalk/dist/gitalk.min.js' }],
-    // bluearchive font
     [
       'link',
-      {
-        rel: 'stylesheet',
-        href: '/font/Blueaka/Blueaka.css',
-      },
+      { rel: 'stylesheet', href: '/font/Blueaka/Blueaka.css' },
     ],
     [
       'link',
-      {
-        rel: 'stylesheet',
-        href: '/font/Blueaka_Bold/Blueaka_Bold.css',
-      },
+      { rel: 'stylesheet', href: '/font/Blueaka_Bold/Blueaka_Bold.css' },
     ],
-    // 图片灯箱
-    [
-      'link',
-      {
-        rel: 'stylesheet',
-        href: 'https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css',
-      },
-    ],
-    [
-      'script',
-      {
-        src: 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js',
-      },
-    ],
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css' }],
+    ['script', { src: 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js' }],
   ],
   ignoreDeadLinks: true,
-  // 生成站点地图
   sitemap: {
-    hostname: 'http://xn--ykq07jmvm4vtba978f345d.top/', //替换为你自己的域名
+    hostname: 'http://xn--ykq07jmvm4vtba978f345d.top/',
   },
-  title: "Sensei's 部落格",
-  description: "Sensei's 部落格",
+  title: "Sensei's 部落格 - Lobotomy Corporation Wiki",
+  description: "Sensei's 部落格与Lobotomy Corporation的详细资料库",
   themeConfig: {
-    // navBar
     menuList: [
       { name: '首页', url: '' },
       { name: '标签', url: 'tags/' },
-      { name: '脑叶wiki', url: 'LobotomyCorpWiki/' },
-
+      { 
+        name: '脑叶wiki', 
+        url: 'LobotomyCorpWiki/',
+        items: [
+          { name: '异常档案', url: '/LobotomyCorpWiki/abnormalities/' },
+          { name: '部门介绍', url: '/LobotomyCorpWiki/departments/' },
+          { name: '职员管理', url: '/LobotomyCorpWiki/staff/' },
+        ],
+      },
     ],
-
-    //banner区配置
     videoBanner: false,
-    name: "Sensei's 部落格",
-    welcomeText: 'Hello, Sensei',
-    motto: ['和你的日常，就是奇迹', '何気ない日常で、ほんの少しの奇跡を見つける物語。'],
+    name: "Sensei's 部落格 - Lobotomy Corporation",
+    welcomeText: 'Hello, Sensei | 欢迎来到Lobotomy Corporation档案馆',
+    motto: ['和你的日常，就是奇迹', '恐惧与痛苦，孕育伟大。'],
     social: [
       { icon: 'github', url: 'https://github.com/bf2967252373/' },
       { icon: 'bilibili', url: 'https://www.bilibili.com/' },
       { icon: 'qq', url: 'https://im.qq.com/index/' },
       { icon: 'wechat', url: 'https://weixin.qq.com/' },
     ],
-
-    //footer配置
-    footerName: 'Sensei',
+    footerName: 'Sensei & Lobotomy Wiki',
     poweredList: [
       { name: 'VitePress', url: 'https://github.com/vuejs/vitepress' },
-      { name: 'GitHub Pages', url: 'https://docs.github.com/zh/pages' },
+      { name: 'GitHub Pages', url: 'https://pages.github.com/' },
     ],
-
-    //gitalk配置
-    clientID: 'Ov23liDDssj5tECOURQE',
-    clientSecret: '3e3b435531ded409c52fc5551579793e696c2efd',
-    repo: 'bf2967252373.github.io',
-    owner: 'bf2967252373',
-    admin: 'bf2967252373',
+    selectText: '选择语言',
+    label: '中文',
+    sidebar: [
+      {
+        text: '部门',
+        items: [
+          { text: '控制团队', link: '/LobotomyCorpWiki/departments/control-team' },
+          { text: '信息团队', link: '/LobotomyCorpWiki/departments/info-team' },
+        ],
+      },
+      {
+        text: '异常档案',
+        items: [
+          { text: '001-002', link: '/LobotomyCorpWiki/abnormalities/001-002' },
+          { text: '003-004', link: '/LobotomyCorpWiki/abnormalities/003-004' },
+        ],
+      },
+      {
+        text: '职员管理',
+        items: [
+          { text: '职员1', link: '/LobotomyCorpWiki/staff/staff1' },
+          { text: '职员2', link: '/LobotomyCorpWiki/staff/staff2' },
+        ],
+      },
+    ],
   },
   markdown: {
-    theme: 'github-light',
+    theme: 'github-dark',
     lineNumbers: true,
     math: true,
     config: (md) => {
-      // use more markdown-it plugins!
       md.use(mdItCustomAttrs, 'image', {
         'data-fancybox': 'gallery',
       })
