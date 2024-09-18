@@ -39,9 +39,9 @@ export default defineConfigWithTheme({
       },
     ],
     videoBanner: false,
-    name: "Sensei's 部落格",
-    welcomeText: 'Hello, Sensei | 欢迎来到Lobotomy Corporation档案馆',
-    motto: ['和你的日常，就是奇迹', '直面恐惧，创造未来。'],
+    name: "Sensei's 部落格 | Lobotomy Corporation档案馆",
+    welcomeText: 'Hello, Sensei',
+    motto: ['和你的日常，就是奇迹', '直面恐惧，创造未来。','何気ない日常で、ほんの少しの奇跡を見つける物語。','FACE THE FEAR,BUILD THE FUTURE.'],
     social: [
       { icon: 'github', url: 'https://github.com/bf2967252373/' },
       { icon: 'bilibili', url: 'https://www.bilibili.com/' },
