@@ -74,11 +74,11 @@ export default defineConfigWithTheme<ThemeConfig>({
     ],
 
     //gitalk配置
-    clientID: 'Ov23lia9U9wFN3WMyoKK',
-    clientSecret: 'b2418ab598c188c43a247c99e728dd2735d58c3b',
-    repo: 'vitepress-theme-bluearchive',
-    owner: 'Alittfre',
-    admin: ['Alittfre'],
+    clientID: 'Ov23liDDssj5tECOURQE',
+    clientSecret: '3e3b435531ded409c52fc5551579793e696c2efd',
+    repo: 'bf2967252373.github.io',
+    owner: 'bf2967252373',
+    admin: 'bf2967252373',
   },
   markdown: {
     theme: 'github-light',
