@@ -52,6 +52,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     menuList: [
       { name: '首页', url: '' },
       { name: '标签', url: 'tags/' },
+      { name: '脑叶wiki', url 'LobotomyCorp/'}
     ],
 
     //banner区配置
