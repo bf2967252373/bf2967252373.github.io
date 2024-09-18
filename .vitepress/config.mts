@@ -59,22 +59,27 @@ export default defineConfigWithTheme({
       {
         text: '部门',
         items: [
-          { text: '控制团队', link: '/LobotomyCorpWiki/departments/control-team' },
-          { text: '信息团队', link: '/LobotomyCorpWiki/departments/info-team' },
+          { text: '控制部', link: '/LobotomyCorpWiki/departments/Malkuth' },
+          { text: '情报部', link: '/LobotomyCorpWiki/departments/Yesod' },
+          { text: '安保部', link: '/LobotomyCorpWiki/departments/Netzach' },
+          { text: '培训部', link: '/LobotomyCorpWiki/departments/Hod' },
         ],
       },
       {
         text: '异常档案',
         items: [
-          { text: '001-002', link: '/LobotomyCorpWiki/abnormalities/001-002' },
-          { text: '003-004', link: '/LobotomyCorpWiki/abnormalities/003-004' },
+          { text: 'ZAYIN', link: '/LobotomyCorpWiki/abnormalities/ZAYIN' },
+          { text: 'TETH', link: '/LobotomyCorpWiki/abnormalities/TETH' },
+          { text: 'HE', link: '/LobotomyCorpWiki/abnormalities/HE' },
+          { text: 'WAW', link: '/LobotomyCorpWiki/abnormalities/WAW' },
+          { text: 'ALEPH', link: '/LobotomyCorpWiki/abnormalities/ALEPH' },
         ],
       },
       {
-        text: '职员管理',
+        text: '职员',
         items: [
-          { text: '职员1', link: '/LobotomyCorpWiki/staff/staff1' },
-          { text: '职员2', link: '/LobotomyCorpWiki/staff/staff2' },
+          { text: '职员介绍', link: '/LobotomyCorpWiki/staff/staff1' },
+          { text: '文职介绍', link: '/LobotomyCorpWiki/staff/staff2' },
         ],
       },
     ],
