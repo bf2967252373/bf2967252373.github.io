@@ -30,7 +30,7 @@ export default defineConfigWithTheme({
       { name: '标签', url: 'tags/' },
       { 
         name: '脑叶wiki', 
-        url: '/LobotomyCorpWiki/index.html',
+        url: '/LobotomyCorpWiki/',
         items: [
           { name: '异常档案', url: '/LobotomyCorpWiki/abnormalities/' },
           { name: '部门介绍', url: '/LobotomyCorpWiki/departments/' },
