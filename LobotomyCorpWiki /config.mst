@@ -1,20 +1,27 @@
-import { defineConfig } from 'vitepress'
+import { defineConfigWithTheme } from 'vitepress'
 
-export default defineConfig({
+export default defineConfigWithTheme({
   lang: 'zh-CN',
   title: 'Lobotomy Corporation Wiki',
-  description: 'Lobotomy Corporation 的详细资料库',
-  base: '/LobotomyCorpWiki/',  // 确保基础路径正确
+  description: 'Lobotomy Corporation 详细资料库',
   themeConfig: {
     nav: [
-      { text: '首页', link: '/LobotomyCorpWiki/' },
-      { text: '异常档案', link: '/abnormalities/' },
-      { text: '部门介绍', link: '/departments/' },
-      { text: '职员管理', link: '/staff/' },
+      { text: '异常档案', link: '/LobotomyCorpWiki/abnormalities/' },
+      { text: '部门介绍', link: '/LobotomyCorpWiki/departments/' },
+      { text: '职员管理', link: '/LobotomyCorpWiki/staff/' },
     ],
     sidebar: [
       {
-        text: '异常档案',
+        text: '部门',
+        items: [
+          { text: '控制部', link: '/LobotomyCorpWiki/departments/Malkuth' },
+          { text: '情报部', link: '/LobotomyCorpWiki/departments/Yesod' },
+          { text: '安保部', link: '/LobotomyCorpWiki/departments/Netzach' },
+          { text: '培训部', link: '/LobotomyCorpWiki/departments/Hod' },
+        ]
+      },
+      {
+        text: '异常',
         items: [
           { text: 'ZAYIN', link: '/LobotomyCorpWiki/abnormalities/ZAYIN' },
           { text: 'TETH', link: '/LobotomyCorpWiki/abnormalities/TETH' },
@@ -23,26 +30,11 @@ export default defineConfig({
           { text: 'ALEPH', link: '/LobotomyCorpWiki/abnormalities/ALEPH' },
         ]
       },
-      {
-        text: '部门介绍',
-        items: [
-          { text: '控制部', link: '/LobotomyCorpWiki/departments/Malkuth' },
-          { text: '情报部', link: '/LobotomyCorpWiki/departments/Yesod' },
-          { text: '安保部', link: '/LobotomyCorpWiki/departments/Netzach' },
-          { text: '培训部', link: '/LobotomyCorpWiki/departments/Hod' },
-        ]
-      },
     ],
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/bf2967252373/' }
-    ],
-    footer: {
-      message: 'Lobotomy Corporation Wiki - Powered by VitePress',
-      copyright: '© 2024 Lobotomy Wiki'
-    }
+    socialLinks: [{ icon: 'github', link: 'https://github.com/bf2967252373/' }],
   },
   markdown: {
     lineNumbers: true,
-    theme: 'github-dark',  // 与Lobotomy的风格一致
+    theme: 'github-dark',
   },
-})
+});
