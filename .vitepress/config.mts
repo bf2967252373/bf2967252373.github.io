@@ -7,14 +7,7 @@ export default defineConfigWithTheme({
     ['link', { rel: 'shortcut icon', href: '/favicon.ico' }],
     ['link', { rel: 'stylesheet', href: 'https://unpkg.com/gitalk/dist/gitalk.css' }],
     ['script', { src: 'https://unpkg.com/gitalk/dist/gitalk.min.js' }],
-    [
-      'link',
-      { rel: 'stylesheet', href: '/font/Blueaka/Blueaka.css' },
-    ],
-    [
-      'link',
-      { rel: 'stylesheet', href: '/font/Blueaka_Bold/Blueaka_Bold.css' },
-    ],
+    ['link', { rel: 'stylesheet', href: '/font/Blueaka/Blueaka.css' }],
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css' }],
     ['script', { src: 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js' }],
   ],
@@ -30,7 +23,7 @@ export default defineConfigWithTheme({
       { name: '标签', url: 'tags/' },
       { 
         name: '脑叶wiki', 
-        url: 'LobotomyCorpWiki/index.html',
+        url: '/LobotomyCorpWiki/',
         items: [
           { name: '异常档案', url: '/LobotomyCorpWiki/abnormalities/' },
           { name: '部门介绍', url: '/LobotomyCorpWiki/departments/' },
@@ -41,7 +34,7 @@ export default defineConfigWithTheme({
     videoBanner: false,
     name: "Sensei's 部落格 | Lobotomy Corporation档案馆",
     welcomeText: 'Hello, Sensei',
-    motto: ['和你的日常，就是奇迹', '直面恐惧，创造未来。','何気ない日常で、ほんの少しの奇跡を見つける物語。','FACE THE FEAR,BUILD THE FUTURE.'],
+    motto: ['和你的日常，就是奇迹', '直面恐惧，创造未来。','FACE THE FEAR, BUILD THE FUTURE.'],
     social: [
       { icon: 'github', url: 'https://github.com/bf2967252373/' },
       { icon: 'bilibili', url: 'https://www.bilibili.com/' },
