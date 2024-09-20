@@ -26,11 +26,11 @@ export default defineConfigWithTheme({
   description: "Sensei's 部落格与Lobotomy Corporation的详细资料库",
   themeConfig: {
     menuList: [
-      { name: '首页', url: '' },
-      { name: '标签', url: 'tags/' },
+      { name: '首页', url: '/' },
+      { name: '标签', url: '/tags/' },
       { 
         name: '脑叶wiki', 
-        url: 'LobotomyCorpWiki/index.html',
+        url: '/LobotomyCorpWiki/index.html',
         items: [
           { name: '异常档案', url: '/LobotomyCorpWiki/abnormalities/' },
           { name: '部门介绍', url: '/LobotomyCorpWiki/departments/' },
