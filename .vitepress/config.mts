@@ -19,37 +19,12 @@ export default defineConfigWithTheme({
   title: "Sensei's 部落格 - Lobotomy Corporation Wiki",
   description: "Sensei's 部落格与Lobotomy Corporation的详细资料库",
   themeConfig: {
-    // 导航菜单配置，修复路径问题
-    menuList: [
-      { name: '首页', url: '/' },  // 修复为根目录
-      { name: '标签', url: '/tags/' },  // 修复为绝对路径
-      { 
-        name: '脑叶wiki', 
-        url: '/LobotomyCorpWiki/index.html',  // 确保脑叶wiki正确加载
-        items: [
-          { name: '异常档案', url: '/LobotomyCorpWiki/abnormalities/' },
-          { name: '部门介绍', url: '/LobotomyCorpWiki/departments/' },
-          { name: '职员管理', url: '/LobotomyCorpWiki/staff/' },
-        ],
-      },
+    // 导航菜单配置
+    nav: [
+      { text: '首页', link: '/' },  // 使用根目录的相对路径
+      { text: '标签', link: '/tags/' },  // 使用正确的相对路径
+      { text: '脑叶wiki', link: '/LobotomyCorpWiki/' },  // 确保指向正确的脑叶wiki页面
     ],
-    videoBanner: false,
-    name: "Sensei's 部落格 | Lobotomy Corporation档案馆",
-    welcomeText: 'Hello, Sensei',
-    motto: ['和你的日常，就是奇迹', '直面恐惧，创造未来。', '何気ない日常で、ほんの少しの奇跡を見つける物語。', 'FACE THE FEAR, BUILD THE FUTURE.'],
-    social: [
-      { icon: 'github', url: 'https://github.com/bf2967252373/' },
-      { icon: 'bilibili', url: 'https://www.bilibili.com/' },
-      { icon: 'qq', url: 'https://im.qq.com/index/' },
-      { icon: 'wechat', url: 'https://weixin.qq.com/' },
-    ],
-    footerName: 'Sensei & Lobotomy Wiki',
-    poweredList: [
-      { name: 'VitePress', url: 'https://github.com/vuejs/vitepress' },
-      { name: 'GitHub Pages', url: 'https://pages.github.com/' },
-    ],
-    selectText: '选择语言',
-    label: '中文',
     sidebar: [
       {
         text: '部门',
@@ -77,6 +52,15 @@ export default defineConfigWithTheme({
           { text: '文职介绍', link: '/LobotomyCorpWiki/staff/staff2' },
         ],
       },
+    ],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/bf2967252373/' },
+      { icon: 'bilibili', link: 'https://www.bilibili.com/' },
+    ],
+    footerName: 'Sensei & Lobotomy Wiki',
+    poweredList: [
+      { name: 'VitePress', link: 'https://github.com/vuejs/vitepress' },
+      { name: 'GitHub Pages', link: 'https://pages.github.com/' },
     ],
   },
   markdown: {
