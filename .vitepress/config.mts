@@ -19,11 +19,19 @@ export default defineConfigWithTheme({
   title: "Sensei's 部落格 - Lobotomy Corporation Wiki",
   description: "Sensei's 部落格与Lobotomy Corporation的详细资料库",
   themeConfig: {
-    // 导航菜单配置
+    // 修正导航栏的页面路径
     nav: [
-      { text: '首页', link: '/' },  // 使用根目录的相对路径
-      { text: '标签', link: '/tags/' },  // 使用正确的相对路径
-      { text: '脑叶wiki', link: '/LobotomyCorpWiki/' },  // 确保指向正确的脑叶wiki页面
+      { text: '首页', link: '/' },  // 使用相对路径指向根目录首页
+      { text: '标签', link: '/tags/' },  // 确保标签路径正确
+      { 
+        text: '脑叶wiki', 
+        link: '/LobotomyCorpWiki/',  // 指向脑叶wiki主页
+        items: [
+          { text: '异常档案', link: '/LobotomyCorpWiki/abnormalities/' },  // 异常档案页面
+          { text: '部门介绍', link: '/LobotomyCorpWiki/departments/' },    // 部门介绍页面
+          { text: '职员管理', link: '/LobotomyCorpWiki/staff/' },         // 职员管理页面
+        ]
+      },
     ],
     sidebar: [
       {
