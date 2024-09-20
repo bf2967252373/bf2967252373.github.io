@@ -19,11 +19,11 @@ export default defineConfigWithTheme({
   description: "Sensei's 部落格与Lobotomy Corporation的详细资料库",
   themeConfig: {
     menuList: [
-      { name: '首页', url: '' },
-      { name: '标签', url: 'tags/' },
+      { name: '首页', url: '/' },
+      { name: '标签', url: '/tags/' },
       { 
         name: '脑叶wiki', 
-        url: '/LobotomyCorpWiki/',
+        url: '/LobotomyCorpWiki/', // 使用相对路径，确保用户访问正确的页面
         items: [
           { name: '异常档案', url: '/LobotomyCorpWiki/abnormalities/' },
           { name: '部门介绍', url: '/LobotomyCorpWiki/departments/' },
@@ -34,7 +34,7 @@ export default defineConfigWithTheme({
     videoBanner: false,
     name: "Sensei's 部落格 | Lobotomy Corporation档案馆",
     welcomeText: 'Hello, Sensei',
-    motto: ['和你的日常，就是奇迹', '直面恐惧，创造未来。','FACE THE FEAR, BUILD THE FUTURE.'],
+    motto: ['和你的日常，就是奇迹', '直面恐惧，创造未来。', 'FACE THE FEAR, BUILD THE FUTURE.'],
     social: [
       { icon: 'github', url: 'https://github.com/bf2967252373/' },
       { icon: 'bilibili', url: 'https://www.bilibili.com/' },
