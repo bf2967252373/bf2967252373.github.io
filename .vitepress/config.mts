@@ -19,48 +19,49 @@ export default defineConfigWithTheme({
   title: "Sensei's 部落格 - Lobotomy Corporation Wiki",
   description: "Sensei's 部落格与Lobotomy Corporation的详细资料库",
   themeConfig: {
-    // 修正导航栏的页面路径
     nav: [
-      { text: '首页', link: '/' },  // 使用相对路径指向根目录首页
+      { text: '首页', link: '/' },  // 使用根目录
       { text: '标签', link: '/tags/' },  // 确保标签路径正确
       { 
         text: '脑叶wiki', 
-        link: '/LobotomyCorpWiki/',  // 指向脑叶wiki主页
+        link: '/LobotomyCorpWiki/',
         items: [
-          { text: '异常档案', link: '/LobotomyCorpWiki/abnormalities/' },  // 异常档案页面
-          { text: '部门介绍', link: '/LobotomyCorpWiki/departments/' },    // 部门介绍页面
-          { text: '职员管理', link: '/LobotomyCorpWiki/staff/' },         // 职员管理页面
-        ]
-      },
-    ],
-    sidebar: [
-      {
-        text: '部门',
-        items: [
-          { text: '控制部', link: '/LobotomyCorpWiki/departments/Malkuth' },
-          { text: '情报部', link: '/LobotomyCorpWiki/departments/Yesod' },
-          { text: '安保部', link: '/LobotomyCorpWiki/departments/Netzach' },
-          { text: '培训部', link: '/LobotomyCorpWiki/departments/Hod' },
-        ],
-      },
-      {
-        text: '异常档案',
-        items: [
-          { text: 'ZAYIN', link: '/LobotomyCorpWiki/abnormalities/ZAYIN' },
-          { text: 'TETH', link: '/LobotomyCorpWiki/abnormalities/TETH' },
-          { text: 'HE', link: '/LobotomyCorpWiki/abnormalities/HE' },
-          { text: 'WAW', link: '/LobotomyCorpWiki/abnormalities/WAW' },
-          { text: 'ALEPH', link: '/LobotomyCorpWiki/abnormalities/ALEPH' },
-        ],
-      },
-      {
-        text: '职员',
-        items: [
-          { text: '职员介绍', link: '/LobotomyCorpWiki/staff/staff1' },
-          { text: '文职介绍', link: '/LobotomyCorpWiki/staff/staff2' },
+          { text: '异常档案', link: '/LobotomyCorpWiki/abnormalities/' },
+          { text: '部门介绍', link: '/LobotomyCorpWiki/departments/' },
+          { text: '职员管理', link: '/LobotomyCorpWiki/staff/' },
         ],
       },
     ],
+    sidebar: {
+      '/LobotomyCorpWiki/': [
+        {
+          text: '部门',
+          items: [
+            { text: '控制部', link: '/LobotomyCorpWiki/departments/Malkuth' },
+            { text: '情报部', link: '/LobotomyCorpWiki/departments/Yesod' },
+            { text: '安保部', link: '/LobotomyCorpWiki/departments/Netzach' },
+            { text: '培训部', link: '/LobotomyCorpWiki/departments/Hod' },
+          ],
+        },
+        {
+          text: '异常档案',
+          items: [
+            { text: 'ZAYIN', link: '/LobotomyCorpWiki/abnormalities/ZAYIN' },
+            { text: 'TETH', link: '/LobotomyCorpWiki/abnormalities/TETH' },
+            { text: 'HE', link: '/LobotomyCorpWiki/abnormalities/HE' },
+            { text: 'WAW', link: '/LobotomyCorpWiki/abnormalities/WAW' },
+            { text: 'ALEPH', link: '/LobotomyCorpWiki/abnormalities/ALEPH' },
+          ],
+        },
+        {
+          text: '职员管理',
+          items: [
+            { text: '职员介绍', link: '/LobotomyCorpWiki/staff/staff1' },
+            { text: '文职介绍', link: '/LobotomyCorpWiki/staff/staff2' },
+          ],
+        },
+      ],
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/bf2967252373/' },
       { icon: 'bilibili', link: 'https://www.bilibili.com/' },
