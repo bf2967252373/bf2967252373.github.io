@@ -19,9 +19,10 @@ export default defineConfigWithTheme({
   title: "Sensei's 部落格 - Lobotomy Corporation Wiki",
   description: "Sensei's 部落格与Lobotomy Corporation的详细资料库",
   themeConfig: {
+    // 配置导航栏
     nav: [
-      { text: '首页', link: '/' },  // 使用根目录
-      { text: '标签', link: '/tags/' },  // 确保标签路径正确
+      { text: '首页', link: '/' },  // 确保为正确路径
+      { text: '标签', link: '/tags/' },  // 确保正确链接
       { 
         text: '脑叶wiki', 
         link: '/LobotomyCorpWiki/',
