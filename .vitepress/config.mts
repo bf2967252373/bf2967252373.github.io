@@ -7,14 +7,8 @@ export default defineConfigWithTheme({
     ['link', { rel: 'shortcut icon', href: '/favicon.ico' }],
     ['link', { rel: 'stylesheet', href: 'https://unpkg.com/gitalk/dist/gitalk.css' }],
     ['script', { src: 'https://unpkg.com/gitalk/dist/gitalk.min.js' }],
-    [
-      'link',
-      { rel: 'stylesheet', href: '/font/Blueaka/Blueaka.css' },
-    ],
-    [
-      'link',
-      { rel: 'stylesheet', href: '/font/Blueaka_Bold/Blueaka_Bold.css' },
-    ],
+    ['link', { rel: 'stylesheet', href: '/font/Blueaka/Blueaka.css' }],
+    ['link', { rel: 'stylesheet', href: '/font/Blueaka_Bold/Blueaka_Bold.css' }],
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css' }],
     ['script', { src: 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js' }],
   ],
@@ -25,12 +19,13 @@ export default defineConfigWithTheme({
   title: "Sensei's 部落格 - Lobotomy Corporation Wiki",
   description: "Sensei's 部落格与Lobotomy Corporation的详细资料库",
   themeConfig: {
+    // 导航菜单配置，修复路径问题
     menuList: [
-      { name: '首页', url: '/' },
-      { name: '标签', url: '/tags/' },
+      { name: '首页', url: '/' },  // 修复为根目录
+      { name: '标签', url: '/tags/' },  // 修复为绝对路径
       { 
         name: '脑叶wiki', 
-        url: '/LobotomyCorpWiki/', // 正确的URL路径
+        url: '/LobotomyCorpWiki/index.html',  // 确保脑叶wiki正确加载
         items: [
           { name: '异常档案', url: '/LobotomyCorpWiki/abnormalities/' },
           { name: '部门介绍', url: '/LobotomyCorpWiki/departments/' },
@@ -41,7 +36,7 @@ export default defineConfigWithTheme({
     videoBanner: false,
     name: "Sensei's 部落格 | Lobotomy Corporation档案馆",
     welcomeText: 'Hello, Sensei',
-    motto: ['和你的日常，就是奇迹', '直面恐惧，创造未来。','何気ない日常で、ほんの少しの奇跡を見つける物語。','FACE THE FEAR, BUILD THE FUTURE.'],
+    motto: ['和你的日常，就是奇迹', '直面恐惧，创造未来。', '何気ない日常で、ほんの少しの奇跡を見つける物語。', 'FACE THE FEAR, BUILD THE FUTURE.'],
     social: [
       { icon: 'github', url: 'https://github.com/bf2967252373/' },
       { icon: 'bilibili', url: 'https://www.bilibili.com/' },
