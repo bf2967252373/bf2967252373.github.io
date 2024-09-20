@@ -26,7 +26,7 @@ export default defineConfigWithTheme({
   description: "Sensei's 部落格与Lobotomy Corporation的详细资料库",
   themeConfig: {
     menuList: [
-      { name: '首页', url: '/' },
+      { name: '首页', url: 'http://xn--ykq07jmvm4vtba978f345d.top/' },
       { name: '标签', url: 'http://xn--ykq07jmvm4vtba978f345d.top/tags/' },
       { 
         name: '脑叶wiki', 
