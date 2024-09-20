@@ -27,10 +27,10 @@ export default defineConfigWithTheme({
   themeConfig: {
     menuList: [
       { name: '首页', url: '/' },
-      { name: '标签', url: '/tags/' },
+      { name: '标签', url: 'http://xn--ykq07jmvm4vtba978f345d.top/tags/' },
       { 
         name: '脑叶wiki', 
-        url: '/LobotomyCorpWiki/index.html',
+        url: 'http://xn--ykq07jmvm4vtba978f345d.top/LobotomyCorpWiki/index.html',
         items: [
           { name: '异常档案', url: '/LobotomyCorpWiki/abnormalities/' },
           { name: '部门介绍', url: '/LobotomyCorpWiki/departments/' },
